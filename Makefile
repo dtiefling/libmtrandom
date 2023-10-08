@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CXXFLAGS = -march=i686 -m32 -O3
+CXXFLAGS = -O3
 CFLAGS = $(CXXFLAGS)
 
 all: libmtrandom.so
