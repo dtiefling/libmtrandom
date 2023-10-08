@@ -8,3 +8,12 @@ Builds shared object that links to libc and libgcc_s, but libstdc++ part
 is included statically.
 
 Tested on GCC 11 (Ubuntu 22.04).
+
+# Build
+
+`Makefile` might be helpful. If it's not, just compile `libmtrandom.cpp`
+as a shared library.
+
+# Usage
+
+Run a program that uses rand/srand with `LD_PRELOAD=libmtrandom.so`.
