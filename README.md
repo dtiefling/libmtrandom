@@ -2,7 +2,7 @@
 Shared library that replaces C rand/srand with std::mt19937 implementation.
 
 This version is designed for UNIX-like systems - if no `srand()` was called,
-it fetches the seed from `/dev/urandom`, using POSIX API read it.
+it fetches the seed from `/dev/urandom`, using POSIX API to read it.
 
 The Makefile is somewhat hacky because of -fno-pic. It yields a neat result
 that is both small and well optimized, but might fail for some compilers.
